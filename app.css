@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: antiquewhite;
+    background-color: black;
     color: white;
 }
 
@@ -39,11 +39,11 @@ input , button {
 
 #new-task-input {
     flex: 1 1 0%;
-    background-color: #2d2424c3;
+    background-color: antiquewhite;
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
-    color: white;
+    color: black;
     font-size: 1.25rem;
 }
 
@@ -51,14 +51,12 @@ input , button {
     color: pink;
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right,rgba(255, 192, 203, 0.508),rgb(255, 192, 203));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
+    border: 1px pink solid;
+    border-radius: 25px;
     transition: 0.4s;
 }
 
-#new-task-bunmit {
+#new-task-submit {
     opacity: 0.8;
 }
 
@@ -93,6 +91,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
 #tasks .task .content .text {
     color: white;
     font-size: 1.125rem;
@@ -110,32 +112,36 @@ main {
     margin: 0 -0.5rem;
 }
 
-.tasks .actions button {
-    cursor: pointer;
-    margin: 0 0.5rem;
-    font-size: 1.125rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
 
 .task .actions button:hover {
     opacity: 0.8;
 }
 
 .task .actions button:active {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .task .actions .edit {
-    background-image: linear-gradient(to right,rgba(255, 192, 203, 0.508),rgb(255, 192, 203));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border: 1px pink solid;
+    border-radius: 25px;
 }
 
 .task .actions .delete {
-    color: crimson;
-    background-image: linear-gradient(to right,rgba(255, 192, 203, 0.508),rgb(255, 192, 203));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border: 1px pink solid;
+    border-radius: 25px;
+}
+
+.edit {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: pink;
+    border: 1px pink solid;
+    border-radius: 25px;
+}
+
+.delete {
+    font-size: 1rem;
+    color: pink;
+    border: 1px pink solid;
+    border-radius: 25px;
 }
