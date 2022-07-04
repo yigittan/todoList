@@ -85,7 +85,7 @@ main {
 #tasks .task {
     display: flex;
     justify-content: space-between;
-    background-color: #2d2424c3;
+    background-color: antiquewhite;
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -96,7 +96,7 @@ main {
 }
 
 #tasks .task .content .text {
-    color: white;
+    color: black;
     font-size: 1.125rem;
     width: 100%;
     display: block;
@@ -121,27 +121,17 @@ main {
     opacity: 0.4;
 }
 
-.task .actions .edit {
-    border: 1px pink solid;
-    border-radius: 25px;
-}
-
-.task .actions .delete {
-    border: 1px pink solid;
-    border-radius: 25px;
-}
-
 .edit {
     margin-right: 10px;
     font-size: 1rem;
-    color: pink;
-    border: 1px pink solid;
+    color: crimson;
+    border: 1px crimson solid;
     border-radius: 25px;
 }
 
 .delete {
     font-size: 1rem;
-    color: pink;
-    border: 1px pink solid;
+    color: crimson;
+    border: 1px crimson solid;
     border-radius: 25px;
 }
