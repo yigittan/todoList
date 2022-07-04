@@ -3,6 +3,13 @@ window.addEventListener("load", () => {
     const input = document.querySelector("#new-task-input")
     const list_el = document.querySelector("#tasks")
 
+    list_el.addEventListener("click",function(item){
+        if(item.target.tagName="input"){
+            item.target.classList.toggle("checked")
+        }
+    })
+    
+
     form.addEventListener("submit",(e) => {
         e.preventDefault()
 

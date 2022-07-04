@@ -135,3 +135,8 @@ main {
     border: 1px crimson solid;
     border-radius: 25px;
 }
+
+.checked {
+    background-color: grey;
+    text-decoration: line-through;
+}
