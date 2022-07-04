@@ -80,6 +80,7 @@ main {
     font-weight: 300;
     color: grey;
     margin-bottom: 1rem;
+    justify-content: space-between;
 }
 
 #tasks .task {
@@ -139,4 +140,11 @@ main {
 .checked {
     background-color: grey;
     text-decoration: line-through;
+}
+
+.deleteAll {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
 }
