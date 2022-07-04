@@ -2,6 +2,13 @@ window.addEventListener("load", () => {
     const form = document.querySelector("#new-task-form")
     const input = document.querySelector("#new-task-input")
     const list_el = document.querySelector("#tasks")
+    const del_all = document.querySelector("#deleteAll")
+
+    del_all.addEventListener("click",function(item) {
+        if(item.target.tagName="button") {
+            list_el.style.display="none"
+        }
+    })
 
     list_el.addEventListener("click",function(item){
         if(item.target.tagName="input"){

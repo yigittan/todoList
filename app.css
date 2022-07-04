@@ -142,9 +142,10 @@ main {
     text-decoration: line-through;
 }
 
-.deleteAll {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
+#deleteAll {
+    opacity: 0.8;
 }
+
+#deleteAll:active {
+    opacity: 0.6;
+}   
