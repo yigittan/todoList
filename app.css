@@ -130,6 +130,14 @@ main {
     border-radius: 25px;
 }
 
+.edit2 {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: crimson;
+    border: 1px crimson solid;
+    border-radius: 25px;
+}
+
 .delete {
     font-size: 1rem;
     color: crimson;
@@ -148,4 +156,24 @@ main {
 
 #deleteAll:active {
     opacity: 0.6;
-}   
+}
+
+.dates {
+    font-size: 1rem;
+    color: crimson;
+    border: 1px crimson solid;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.date {
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
