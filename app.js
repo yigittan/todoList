@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
         const date_input = document.createElement("input");
         date_input.classList.add("text");
         date_input.type = "text";
-        date_input.value = "asd";
+        date_input.value = "=> Tarih ekle";
         date_input.setAttribute("readonly","readonly");
         dates_content.appendChild(date_input);
 
@@ -94,6 +94,19 @@ window.addEventListener("load", () => {
 
         input.value="";
 
+        date_edit.addEventListener("click", () => {
+            console.log("tıkladım")
+            if(date_edit.innerHTML.toLowerCase() =="edit"){
+            date_input.value="";
+            date_input.removeAttribute("readonly");
+            date_input.focus();
+            date_edit.innerHTML="Doneee"
+        } else {
+            date_input.setAttribute("readonly","readonly");
+            date_edit.innerHTML="Edit";
+        }
+    })
+
         task_date.addEventListener("click", (item) => {
             dates.style.display = ""
         })
@@ -119,17 +132,5 @@ window.addEventListener("load", () => {
                 list_el.removeChild(task_el);   
             })
     });
-
-        date_edit.addEventListener("click",() => {
-            if(date_edit.innerHTML.toLowerCase()=="edit") {
-                console.log("date_edit e tıkalndı")
-                date_input.removeAttribute("readonly");
-                dates_input.focus();
-                date_edit.innerHTML="Ended";
-            } else {
-                date_input.setAttribute("readonly","readonly");
-                date_edit.innerHTML="Edit"
-            }
-        })
 
 });
